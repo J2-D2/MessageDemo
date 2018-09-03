@@ -17,8 +17,6 @@ namespace MessageApi
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
-
-                //var test = Configuration["AppSettings:Environment"].ToString(); // set uri from config value
         }
 
         public IConfiguration Configuration { get; }
