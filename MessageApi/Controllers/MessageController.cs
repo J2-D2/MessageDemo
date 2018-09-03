@@ -30,7 +30,7 @@ namespace MessageApi.Controllers
         }
 
         // GET file content from a file path
-        [HttpGet("file/{filename}/{filepath}")]
+        [HttpGet("file")]
         public IActionResult GetFileMessage(string fileName, string filePath)
         {
             try{
@@ -76,7 +76,7 @@ namespace MessageApi.Controllers
         }
 
         // GET read data from DB based on its ID
-        [HttpGet("database/{id}")]
+        [HttpGet("database")]
         public IActionResult GetDatabaseMessage(int id)
         {
             try{
